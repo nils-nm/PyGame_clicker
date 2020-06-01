@@ -118,14 +118,14 @@ while run:
             if (event.pos[0] - xt1 - 5) ** 2 + (event.pos[1] - yt1 - 5) ** 2 < (r ** 2):
                 TIME = True
                 a = True
-                score -= 1500
+                score -= 2000
                 screen.fill((0, 0, 0))
-        if score >= 5 and event.type == pygame.MOUSEBUTTONDOWN and TIME2 is False:
+        if score >= 5000 and event.type == pygame.MOUSEBUTTONDOWN and TIME2 is False:
             if (event.pos[0] - xt2 - 5) ** 2 + (event.pos[1] - yt2 - 5) ** 2 < (r ** 2):
                 TIME2 = True
                 a = False
                 b = True
-                score -= 0
+                score -= 5000
                 screen.fill((0, 0, 0))
 
         if BUST is True:
